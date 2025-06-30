@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 00;
+    font-style: normal;
+}
+
+.main_box{
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one{
+    top: 10px;
+    color: white;
+    position: absolute;
+    left: 15px;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.btn_one:checked{
+    transition: 0.2s;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(255,255,255,0.6) ;
+    left: -300px;
+    transition: all 0.3s linear;
+}
+
+.sidebar .logo{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(255,255,255,0.6);
+}
+
+.sidebar .logo a{
+    position: absolute;
+    padding-top: 20px;
+    left: 70px;
+    font-size: 23px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.sidebar .btn_two{
+    position: absolute;
+    left: 250px;
+    top: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar .btn_two i{
+    cursor: pointer;
+}
+
+.sidebar .menu {
+    position: absolute;
+    margin-top: 100px;
+    width: 98%;
+    margin-left: 5px;
+}
+
+.sidebar .menu li i{
+    margin: 25px;
+    font-size: 20px;
+    margin-left: 0px;
+    color: white ;
+    padding-right: 8px;
+    padding-left: 4px;
+    text-decoration: none;
+    
+}
+
+.sidebar .menu li:hover{
+    box-shadow: 0 0 4px rgba(255,255,255,0.6);
+    transition: 0.1s;
+    
+    
+}
+
+.sidebar .menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+.sidebar .social_media {
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    text-decoration: none;
+   
+}
+
+.sidebar .social_media a{
+    text-decoration: none;
+}
+
+.sidebar .social_media i{
+    color: white;
+    /* padding: 0px 13px; */
+    margin: 1px;
+    opacity: 0.6;
+    font-size: 20px;
+    padding: 6px;
+}
+
+
+.sidebar .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#check:checked ~ .sidebar{
+      left: 0;
+}
+
+#check:checked ~ .btn_one{
+    display: none;
+}
