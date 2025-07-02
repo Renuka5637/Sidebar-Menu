@@ -11,5 +11,7 @@ A simple sidebar navigation menu built using **HTML** and **CSS** only.
  💻 **HTML**
  🎨 **CSS**
 
+ ## Output Preview is given in image 
+
  
 If you like this project, please ⭐️ star the repo — it really helps and motivates me!
